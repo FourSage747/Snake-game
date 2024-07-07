@@ -4,7 +4,7 @@ const RecordHolders = ({ score, gameOver }) => {
   const [records, setRecords] = useState([]);
   const [form, setForm] = useState(true);
   const [name, setName] = useState('');
-  const url = 'http://localhost:3000';
+  const url = 'https://snake-game-ls0c.onrender.com';
   useEffect(() => {
     const fetchRecords = async () => {
       const response = await fetch(`${url}/api/records`);
